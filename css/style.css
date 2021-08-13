@@ -1,0 +1,102 @@
+*,body,html{
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+main{
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+video#background{
+  width: 100%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.glass-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.quote{
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid black;
+    padding: 3%;
+    /* padding-top:4%; */
+    border-radius: 5px;
+    height: auto;
+    width: 30%;
+
+}
+#quote-main{
+    padding-top: 40px;
+}
+
+#quote-main,#author{
+    font-family: 'Spirax', cursive;
+    font-size: 15px;
+}
+
+#author{
+    position: absolute;
+    right: 5%;
+    margin: 10px;
+    transform: translateX(-5%);
+}
+
+#image{
+    position: absolute;
+    width: 6%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    z-index: 9999;
+    height: 12%;
+    border-radius: 50%;
+}
+#image>img{
+    width: 100%;
+    height: 100%;
+}
+.aboutDev{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 8;
+    background-color: #000;
+    opacity: 0.8;
+}
+.dialog{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    width: 40%;
+    transform: translateX(-50%);
+    z-index: 9;
+    padding:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.close{
+    position: relative;
+    left: 95%;
+    top: 10%;
+}
+.dialog-body{
+    padding: 20px;
+
+}

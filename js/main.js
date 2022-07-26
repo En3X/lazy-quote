@@ -31,7 +31,7 @@ function setMainData(data) {
     console.log(data);
     document.querySelector("#quote-main")
     .textContent = data.text;
-    if (data.author == null || data.author == "null") {
+    if (data.author == null || data.author == undefined) {
         data.author = "Unknown Author";
     }
     document.querySelector("#author")
